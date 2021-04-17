@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<script>
+     const sum = 3 * true;
+    console.log(sum); 
+
+    const math = Math.PI;
+    console.log(math);
+    //Math 객체의 프로퍼티
+    function polarToToDescartes(r,theta){
+        const angle = Math.PI * theta / 180;
+        return {x: r*Math.cos(angle), y: r*Math.sin(angle)};
+    }
+    console.log(polarToToDescartes(1,2));
+</script>    
+</body>
+</html>
