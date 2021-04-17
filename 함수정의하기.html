@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function dist(p,q){
+            const dx = q - p;
+            console.log(dx);
+            const dy = q - p
+            console.log(dy);
+
+            return Math.sqrt(dx*dx+dy*dy);
+
+        }
+
+        console.log(dist(2,3));
+
+        function bark(){
+            console.log("BOw0WOW");
+        }
+
+        console.log(bark());
+
+
+        const square = function (x){
+            return x*x;
+        }
+        console.log(square(5));
+        
+        function add1(x) {return x = x + 1}
+        
+        const a = 3;
+        const b = add1(a);
+        console.log(add1(a));
+
+        function name(Name,Name2){
+            this.Name = Name
+            this.Name2 = Name2
+
+        }
+        const name1 = new name("asd");
+        console.log(name1);
+
+        const name2 = new name("sad","asd");
+        console.log(name2);
+
+
+        function person(name){
+            this.name = name;
+            this.introduce = function(){
+                return this.name
+            }
+        }
+
+        const p1 = new person("egoing");
+        console.log(p1);
+
+        const p2 = new person("leezche");
+
+        console.log(p2);
+        
+
+        function math(ko,eg){
+            this.ko = ko;
+            this.eg = eg;
+        }
+
+        const k = new math("수학");
+        console.log(k);
+        
+        const e = new math("영어");
+        console.log(e);
+
+        
+    </script>
+</body>
+</html>
